@@ -1,0 +1,83 @@
+.lawyers {
+    background: #f7f7f7;
+    padding: 5rem 0;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        row-gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    &__title {
+        color: var(--colors-black-text, #222);
+        font-family: Nunito Sans;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 150%; /* 2.625rem */
+        text-transform: uppercase;
+
+        &::after {
+            display: block;
+            content: '';
+            background-color: var(--blue-color-100, #4F8FF0);
+            width: 3.125rem;
+            height: 0.1875rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__text {
+        color: var(--colors-black-text, #222);
+        text-align: center;
+        font-family: Nunito Sans;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 1.2rem */
+    }
+}
+.lawyers-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1.5rem;
+    justify-items: center;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        row-gap: 1.5rem;
+        background-color: #fff;
+        width: fit-content;
+        box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        row-gap: 0.625rem;
+        padding-bottom: 1.5rem;
+    }
+    &__field {
+        color: var(--colors-black-text, #222);
+        text-align: center;
+        font-family: Nunito Sans;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%; /* 1.05rem */
+        text-transform: lowercase;
+    }
+    &__fio {
+        color: var(--colors-black-text, #222);
+        text-align: center;
+        font-family: Nunito Sans;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 1.2rem */
+    }
+}

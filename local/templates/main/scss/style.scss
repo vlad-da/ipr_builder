@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.layout {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 20px;
+    &__block {
+        max-width: 1440px;
+    }
+}
+
+/* ------------------------------------------------------------- меню ---------------------------------------------------------------- */
+
+.menu {
+    position: sticky;
+    top: 0;
+    background: #010101;
+
+}
+.upbar {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+        color: var(--blue-color-100, #4F8FF0);
+        font-family: Nunito Sans;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        &_white {
+            margin-top: -10px;
+            color: var(--white-color-100, #FFF);
+            font-size: 20px;
+            text-transform: lowercase;
+        }
+    }
+    &__call {
+        color: var(--blue-color-100, #4F8FF0);
+        font-family: Nunito Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+    }
+}
+
+.navbar {
+    &__list {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 32px;
+        list-style-type: none;
+    }
+
+    &__link {
+        color: var(--white-color-100, #FFF);
+        font-family: Nunito Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        text-decoration: none;
+        &:hover {
+            color: var(--blue-color-100, #4F8FF0);
+        }
+    }
+}
+
+/* ------------------------------------------------------------- меню ---------------------------------------------------------------- */
+
+/* -------------------------------------------------------------юр услуги---------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------юр услуги---------------------------------------------------------------- */
+
+/* -------------------------------------------------------------список услуг---------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------список услуг---------------------------------------------------------------- */
+
+/* -------------------------------------------------------------правозащитники---------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------правозащитники---------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------наши юристы---------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------footer---------------------------------------------------------------- */
+
+.footer {
+    background: #222222;
+    margin-top: 10rem;
+    &__calls {
+        display: flex;
+        flex-direction: column;
+    }
+    &__name {
+        color: var(--blue-color-100, #4F8FF0);
+        font-family: Nunito Sans;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 150%; /* 2.625rem */
+        text-transform: uppercase;
+    }
+    &__info {
+        color: var(--white-color-100, #FFF);
+        font-family: Nunito Sans;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 150%; /* 1.875rem */
+        text-transform: lowercase;
+        margin-top: -0.5rem;
+    }
+    &__desc {
+        color: var(--white-color-200, #F8F5F4);
+        font-family: Nunito Sans;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 1.2rem */
+        text-transform: lowercase;
+        max-width: 54rem;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5rem 0 3rem;
+        border-bottom: 1px solid rgba(	140, 140, 140, 0.2);
+    }
+}
